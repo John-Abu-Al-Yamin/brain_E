@@ -18,6 +18,7 @@ export const metadata: Metadata = {
   title: "Softwares | Encrypt Brain ",
   description:
     "Encrypt Brain  is a software development company that specializes in creating innovative and efficient software solutions for businesses of all sizes.",
+    
 };
 
 export default function RootLayout({

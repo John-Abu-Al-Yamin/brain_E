@@ -87,7 +87,7 @@ const cardVariants: Variants = {
 
 const Cards: React.FC = () => {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 lg:gap-6 p-2 lg:p-6">
+    <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3  gap-3 lg:gap-6 p-2 lg:p-6">
       {cardData.map(({ id, title, description, icon: Icon }) => (
         <motion.div
           key={id}

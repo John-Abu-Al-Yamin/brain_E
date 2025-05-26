@@ -38,13 +38,13 @@ const Navbar = () => {
                 height={40}
                 className=" object-cover "
               />
-              <img
+              {/* <img
                 src="/image/EncryptBrain/Logo/Encrypt Brain Logo title.png"
                 alt="logo"
                 width={100}
                 height={100}
                 className=" object-cover "
-              />
+              /> */}
             </motion.div>
           </div>
 
