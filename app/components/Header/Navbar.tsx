@@ -3,7 +3,6 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ModeToggle } from "@/app/ThemBtn";
-import Image from "next/image";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -32,14 +31,14 @@ const Navbar = () => {
               whileTap={{ scale: 0.95 }}
               className="flex items-center gap-2 cursor-pointer"
             >
-              <Image
+              <img
                 src="/image/EncryptBrain/Logo/Encrypt Brain Logo icon.png"
                 alt="logo"
                 width={40}
                 height={40}
                 className=" object-cover "
               />
-              <Image
+              <img
                 src="/image/EncryptBrain/Logo/Encrypt Brain Logo title.png"
                 alt="logo"
                 width={100}

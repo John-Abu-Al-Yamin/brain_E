@@ -1,7 +1,6 @@
 "use client";
 
 import { motion, useInView } from "framer-motion";
-import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
 
 export default function HandsAnimation() {
@@ -41,7 +40,7 @@ export default function HandsAnimation() {
         }}
         className={`absolute left-1/2 transform -translate-x-full ${topPosition} lg:top-1/2 -translate-y-1/2`}
       >
-        <Image
+        <img
           src="/image/EncryptBrain/Hands/ropot-hands.png"
           alt="Cyborg Hand"
           width={300}
@@ -62,7 +61,7 @@ export default function HandsAnimation() {
         }}
         className={`absolute ${topPosition} lg:top-1/2 left-1/2 transform  -translate-y-1/2`}
       >
-        <Image
+        <img
           src="/image/EncryptBrain/Hands/human-hand.png"
           alt="Human Hand"
           width={300}

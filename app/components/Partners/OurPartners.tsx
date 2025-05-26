@@ -1,6 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import HeaderSection from "../HeaderSection";
 
 const OurPartners = () => {
@@ -38,7 +37,7 @@ const OurPartners = () => {
             key={partner.id}
             className="flex flex-col items-center justify-center bg-transparent rounded-3xl cursor-pointer "
           >
-            <Image
+            <img
               src={partner.logo}
               alt="placeholder"
               width={120}

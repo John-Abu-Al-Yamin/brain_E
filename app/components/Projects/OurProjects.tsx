@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import HeaderSection from "../HeaderSection";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -36,13 +35,13 @@ const OurProjects = () => {
           className="overflow-hidden rounded-xl shadow-sm dark:shadow-none bg-white dark:bg-zinc-900 transition hover:shadow-md"
         >
           <div className="relative h-44 w-full">
-            <Image
+            <img
               src="/image/EncryptBrain/Pretty/pretty logo.png"
               alt="Pretty Project"
-              fill
+            
               sizes="(max-width: 768px) 100vw, 33vw"
               className="object-cover"
-              priority
+           
             />
           </div>
 
@@ -90,13 +89,13 @@ const OurProjects = () => {
           className="overflow-hidden rounded-xl shadow-sm dark:shadow-none bg-white dark:bg-zinc-900 transition hover:shadow-md"
         >
           <div className="relative h-44 w-full">
-            <Image
+            <img
               src="/image/EncryptBrain/Pretty/mhwerflowers.png"
               alt="MhwerFlowers Project"
-              fill
+            
               sizes="(max-width: 768px) 100vw, 33vw"
               className="object-cover"
-              priority
+            
             />
           </div>
 

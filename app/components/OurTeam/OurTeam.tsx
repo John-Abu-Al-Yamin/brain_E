@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import Image from 'next/image';
+
 
 const OurTeam = () => {
   return (
@@ -78,7 +78,7 @@ const TeamCard = () => (
   >
     <div className="sm:flex sm:justify-between sm:gap-4 lg:gap-6">
       <div className="sm:order-last sm:shrink-0">
-        <Image
+        <img
           alt="card"
           src="https://placehold.co/600x400/EEE/31343C.png"
           className="size-16 rounded-full object-cover sm:size-[72px]"
