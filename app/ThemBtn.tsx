@@ -1,28 +1,28 @@
-"use client"
+"use client";
 
-import { useTheme } from "next-themes"
-import { motion } from "framer-motion"
-import { useEffect, useState } from "react"
-import { Moon, Sun } from "lucide-react"
+import { useTheme } from "next-themes";
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import { Moon, Sun } from "lucide-react";
 
 export function ModeToggle() {
-  const { theme, setTheme } = useTheme()
-  const [mounted, setMounted] = useState(false)
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
 
   // Prevent hydration mismatch by only rendering after mount
   useEffect(() => {
-    setMounted(true)
-  }, [])
+    setMounted(true);
+  }, []);
 
   const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light")
-  }
+    setTheme(theme === "light" ? "dark" : "light");
+  };
 
   // Determine if dark mode is active
-  const isDark = mounted && theme === "dark"
+  const isDark = mounted && theme === "dark";
 
   if (!mounted) {
-    return null // Avoid rendering until client-side to prevent hydration mismatch
+    return null; // Avoid rendering until client-side to prevent hydration mismatch
   }
 
   return (
@@ -32,7 +32,9 @@ export function ModeToggle() {
         h-[40px] sm:h-[45px] md:h-[50px]
         rounded-full flex items-center px-2 
         ${
-          isDark ? "justify-end bg-gray-800 border border-gray-700" : "justify-start bg-blue-50 border border-blue-100"
+          isDark
+            ? "justify-end bg-gray-800 border border-gray-700"
+            : "justify-start bg-blue-50 border border-blue-100"
         } 
         cursor-pointer transition-colors duration-500
         shadow-md hover:shadow-lg`}
@@ -65,8 +67,6 @@ export function ModeToggle() {
           <Sun className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
         )}
       </motion.div>
-
-      
     </button>
-  )
+  );
 }

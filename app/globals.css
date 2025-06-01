@@ -81,7 +81,83 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+/* Swiper Slider Custom Styles - تخصيص أزرار الـ Slider */
 
+/* تصغير أزرار التنقل (الأسهم) */
+.swiper-button-next,
+.swiper-button-prev {
+  width: 30px !important;
+  height: 30px !important;
+  margin-top: -15px !important;
+}
+
+/* تصغير أيقونات الأسهم داخل الأزرار */
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 12px !important;
+  font-weight: bold !important;
+}
+
+/* تصغير نقاط التنقل (Pagination Bullets) */
+.swiper-pagination-bullet {
+  width: 8px !important;
+  height: 8px !important;
+  margin: 0 3px !important;
+}
+
+/* تعديل موقع نقاط التنقل */
+.swiper-pagination {
+  bottom: 8px !important;
+}
+
+/* تخصيص لون الأزرار والنقاط (اختياري) */
+.swiper-button-next,
+.swiper-button-prev {
+  color: rgba(24, 101, 169, 0.8) !important;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #8b5cf6 !important; /* لون بنفسجي يتماشى مع التصميم */
+}
+
+/* تأثيرات إضافية للتحسين */
+.swiper-button-next,
+.swiper-button-prev {
+  transition: all 0.3s ease !important;
+  opacity: 0.7;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* للشاشات الصغيرة - تصغير أكثر */
+@media (max-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 25px !important;
+    height: 25px !important;
+    margin-top: -12.5px !important;
+  }
+  
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 10px !important;
+  }
+  
+  .swiper-pagination-bullet {
+    width: 6px !important;
+    height: 6px !important;
+    margin: 0 2px !important;
+  }
+}
 
 /* Add cursor styles */
 /* a,
@@ -219,7 +295,6 @@ textarea,
   color: black !important;
 }
 
-
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -231,7 +306,6 @@ textarea,
     @apply bg-background text-foreground;
   }
 }
-
 
 @layer base {
   * {
