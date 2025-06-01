@@ -25,7 +25,7 @@ const OurPartners = () => {
       viewport={{ once: false }}
       transition={{ duration: 0.8 }}
     >
-      <HeaderSection companey="Encrypt Brain" title="Our Partners" />
+      <HeaderSection  title="Our Partners" />
 
       <div className="w-full grid grid-cols-2 place-items-center gap-2 md:gap-2">
         {partners.map((partner) => (

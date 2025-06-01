@@ -141,6 +141,31 @@ export default function Footer() {
               initial="hidden"
               animate={isInView ? "show" : "hidden"}
             >
+
+
+              <motion.div
+                variants={item}
+                className="flex items-center justify-center md:justify-start space-x-2 md:space-x-3"
+              >
+                <Phone size={16} className="text-gray-400 flex-shrink-0" />
+                <div className="flex gap-x-2  text-xs md:text-sm text-gray-400 transition-colors">
+                  <a
+                    className="hover:text-white cursor-pointer block md:inline"
+                    href="https://api.whatsapp.com/send?phone=201097706996"
+                  >
+                    +201097706996
+                  </a>
+                  <span className="hidden md:inline"> | </span>
+                  <a
+                    href="https://api.whatsapp.com/send?phone=201044950655"
+                    className="hover:text-white cursor-pointer block md:inline"
+                  >
+                    +201044950655
+                  </a>
+                </div>
+              </motion.div>
+
+
               <motion.div
                 variants={item}
                 className="flex items-center justify-center md:justify-start space-x-2 md:space-x-3"
@@ -179,27 +204,6 @@ export default function Footer() {
                 </a>
               </motion.div>
 
-              <motion.div
-                variants={item}
-                className="flex items-center justify-center md:justify-start space-x-2 md:space-x-3"
-              >
-                <Phone size={16} className="text-gray-400 flex-shrink-0" />
-                <div className="text-xs md:text-sm text-gray-400 transition-colors">
-                  <a
-                    className="hover:text-white cursor-pointer block md:inline"
-                    href="https://api.whatsapp.com/send?phone=201097706996"
-                  >
-                    +201097706996
-                  </a>
-                  <span className="hidden md:inline"> | </span>
-                  <a
-                    href="https://api.whatsapp.com/send?phone=201044950655"
-                    className="hover:text-white cursor-pointer block md:inline"
-                  >
-                    +201044950655
-                  </a>
-                </div>
-              </motion.div>
             </motion.div>
           </motion.div>
         </div>

@@ -9,7 +9,7 @@ const HeroContent = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false }}
         transition={{ duration: 0.8 }}
-        className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-4 dark:text-white text-black font-mono uppercase tracking-tighter drop-shadow-xl"
+        className="text-4xl font-normal sm:text-5xl md:text-6xl lg:text-7xl mb-4 dark:text-white text-black  uppercase tracking-tighter drop-shadow-xl"
       >
         Encrypt Brain 
       </motion.h1>

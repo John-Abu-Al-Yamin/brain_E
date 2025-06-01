@@ -5,7 +5,7 @@ const HeaderSection = ({
   title,
   description,
 }: {
-  companey: string;
+  companey?: string;
   title: string;
   description?: string;
 }) => {
@@ -14,7 +14,7 @@ const HeaderSection = ({
       <motion.p className="text-xs sm:text-sm font-bold mb-6">
         {companey}
       </motion.p>
-      <motion.h1 className="text-4xl md:text-6xl lg:text-7xl mb-4 dark:text-white text-black font-mono uppercase tracking-tighter drop-shadow-xl">
+      <motion.h1 className="text-4xl md:text-6xl lg:text-7xl mb-4 dark:text-white text-black uppercase tracking-tighter drop-shadow-xl">
         {title}
       </motion.h1>
       <motion.p className="text-xs sm:text-sm font-bold mb-6">

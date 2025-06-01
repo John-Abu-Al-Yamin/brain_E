@@ -49,13 +49,10 @@ const About = () => {
       transition={{ duration: 0.8 }}
     >
       <HeaderSection
-        companey="Hello to Encrypt Brain"
+        // companey="Hello to Encrypt Brain"
         title="Who Are We?"
         description="
-          Encrypt Brain  is a tech startup founded in January 2025 and
-          headquartered in Egypt. We specialize in delivering cutting-edge
-          digital solutions for clients across the Gulf and Europe with a focus
-          on mobile and web app development UI/UX and software quality services."
+          Encrypt Brain is a tech startup founded in January 2025 and headquartered in Egypt. We specialize in delivering cutting-edge digital solutions for clients across the Gulf and Europe, focusing on mobile and web app development, UI/UX, and software quality services"
       />
 
       <motion.div
@@ -151,7 +148,7 @@ const About = () => {
           <div className="p-3">
             <div className="flex items-center justify-center gap-2  ">
               <Maximize className="6 h-6 md:w-10 md:h-10  " />
-              
+
               <p className="text-sm md:text-lg dark:text-white text-black">
                 Cost
               </p>

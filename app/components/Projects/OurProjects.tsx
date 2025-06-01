@@ -4,13 +4,13 @@ import { useState, ReactNode } from "react";
 import HeaderSection from "../HeaderSection";
 import Link from "next/link";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-// Import required modules
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// // Import Swiper styles
+// import "swiper/css";
+// import "swiper/css/navigation";
+// import "swiper/css/pagination";
+// // Import required modules
+// import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 interface ModalProps {
   isOpen: boolean;
@@ -48,7 +48,7 @@ const OurProjects: React.FC = () => {
     title,
     description,
     children,
-    images,
+   
   }) => {
     if (!isOpen) return null;
 
@@ -74,7 +74,7 @@ const OurProjects: React.FC = () => {
           </div>
 
           {/* Image Slider */}
-          <div className="mb-6">
+          {/* <div className="mb-6">
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}
               spaceBetween={10}
@@ -104,7 +104,7 @@ const OurProjects: React.FC = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
-          </div>
+          </div> */}
 
           <p className="text-gray-600 dark:text-gray-300 mb-6 text-sm leading-relaxed">
             {description}
@@ -124,7 +124,7 @@ const OurProjects: React.FC = () => {
       viewport={{ once: false }}
       transition={{ duration: 0.8 }}
     >
-      <HeaderSection companey="Encrypt Brain" title="Our Projects" />
+      <HeaderSection title="Our Projects" />
 
       <div className="w-full grid grid-cols-2 gap-x-4 md:gap-x-6">
         {/* Project Card - Pretty */}
@@ -136,12 +136,17 @@ const OurProjects: React.FC = () => {
           className="overflow-hidden rounded-xl shadow-sm dark:shadow-none bg-white dark:bg-zinc-900 transition hover:shadow-md"
         >
           <div className="relative h-44 w-full">
-            <img
-              src="/image/EncryptBrain/Pretty/pretty logo.png"
-              alt="Pretty Project"
-              sizes="(max-width: 768px) 100vw, 33vw"
-              className="object-cover w-full h-full"
-            />
+            {/* Background image */}
+            <div className="absolute inset-0 w-full h-full object-cover bg-white z-0"></div>
+
+            {/* Foreground centered image */}
+            <div className="absolute inset-0 flex items-center justify-center z-10">
+              <img
+                src="/image/EncryptBrain/Pretty/pretty logo.png"
+                alt="Pretty Project"
+                className="w-44 h-44 object-contain"
+              />
+            </div>
           </div>
 
           <div className="p-3 sm:p-4">
@@ -174,12 +179,17 @@ const OurProjects: React.FC = () => {
           className="overflow-hidden rounded-xl shadow-sm dark:shadow-none bg-white dark:bg-zinc-900 transition hover:shadow-md"
         >
           <div className="relative h-44 w-full">
-            <img
-              src="/image/EncryptBrain/Pretty/mhwerflowers.png"
-              alt="MhwerFlowers Project"
-              sizes="(max-width: 768px) 100vw, 33vw"
-              className="object-cover w-full h-full"
-            />
+            {/* Background image */}
+            <div className="absolute inset-0 w-full h-full object-cover bg-white z-0"></div>
+
+            {/* Foreground centered image */}
+            <div className="absolute inset-0 flex items-center justify-center z-10">
+              <img
+                src="/image/EncryptBrain/Pretty/mhwerflowers.png"
+                alt="Pretty Project"
+                className="w-44 h-44 object-contain"
+              />
+            </div>
           </div>
 
           <div className="p-3 sm:p-4">
